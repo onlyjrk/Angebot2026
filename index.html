@@ -3,227 +3,467 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotionale Meisterschaft: Verstehe und vertraue deinen Gefühlen</title>
+    <meta name="description" content="Jahresend-Special 2025: Emotionale Meisterschaft Coaching & Online-Kurs">
+    <title>🎄 Jahresend-Special 2025: Emotionale Meisterschaft</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
+        /* --- CSS VARIABLES --- */
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #e67e22;
-            --text-color: #333;
-            --background-color: #ecf0f1;
+            --primary-green: #1a472a;
+            --dark-green: #0f2e1b;
+            --accent-red: #c41e3a; /* Das Rot für den Timer */
+            --gold: #d4af37;
+            --text-color: #2c3e50;
+            --light-bg: rgba(255, 255, 255, 0.95);
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
-        body { 
-            font-family: 'Roboto', Arial, sans-serif; 
-            line-height: 1.6; 
-            margin: 0; 
-            padding: 0; 
-            background-color: var(--background-color);
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
             color: var(--text-color);
+            background: radial-gradient(circle at top, #2d5a3d 0%, #1a472a 60%, #05140a 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
         }
-        .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
+
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        a { text-decoration: none; transition: all 0.3s ease; }
+
+        /* --- CONTAINER --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* --- HEADER --- */
+        header {
             text-align: center;
-            padding: 120px 20px;
+            padding: 60px 20px 40px;
+            background: var(--light-bg);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: var(--card-shadow);
+            border-bottom: 5px solid var(--accent-red);
         }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .hero p {
-            font-size: 1.3em;
-            max-width: 700px;
-            margin: 0 auto 40px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        .cta-button { 
-            display: inline-block; 
-            background: var(--accent-color); 
-            color: #fff; 
-            padding: 15px 30px; 
-            text-decoration: none; 
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin: 10px 0;
+
+        .logo { font-size: 3em; margin-bottom: 10px; display: block; }
+        
+        h1 {
+            font-size: 2.5em;
+            color: var(--accent-red);
+            margin-bottom: 10px;
             text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: var(--primary-green);
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        /* --- COUNTDOWN (JETZT ROT) --- */
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0 30px;
+        }
+        .countdown-box {
+            background: var(--accent-red); /* Hier auf ROT geändert */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            min-width: 70px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(196, 30, 58, 0.4);
+        }
+        .countdown-number { font-size: 1.5em; font-weight: bold; display: block; }
+        .countdown-label { font-size: 0.7em; text-transform: uppercase; }
+
+        /* --- GUARANTEE & CONTACT --- */
+        .guarantee {
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .contact-info {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* --- OFFERS --- */
+        .offers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+            align-items: start;
+        }
+
+        .offer-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .offer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+
+        .bestseller {
+            border: 3px solid var(--gold);
+            transform: scale(1.02);
+            z-index: 2;
+        }
+        .bestseller:hover { transform: scale(1.05) translateY(-10px); }
+        
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            white-space: nowrap;
+        }
+
+        .offer-title { font-size: 1.8em; color: var(--primary-green); margin-bottom: 5px; text-align: center; }
+        .offer-tagline { color: #666; font-size: 0.95em; text-align: center; margin-bottom: 20px; min-height: 45px; }
+
+        .price-section { text-align: center; margin: 20px 0; }
+        .old-price { font-size: 1.1em; color: #999; text-decoration: line-through; }
+        .new-price { font-size: 2.8em; color: var(--accent-red); font-weight: 700; line-height: 1.1; }
+        .savings {
+            background: #ffebee;
+            color: var(--accent-red);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .upgrade-hint {
+            text-align: center;
+            font-size: 1em;
+            color: var(--dark-green);
+            font-weight: bold;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .features { margin: 25px 0; flex-grow: 1; }
+        .feature-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95em;
+        }
+        .feature-item:last-child { border-bottom: none; }
+        .feature-icon { color: var(--primary-green); flex-shrink: 0; }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, var(--accent-red), #a01729);
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(196, 30, 58, 0.3);
+            margin-top: auto;
         }
         .cta-button:hover {
-            background-color: #d35400;
-            transform: scale(1.05);
+            background: linear-gradient(135deg, #a01729, #800000);
+            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.5);
+            transform: scale(1.02);
         }
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-        .course-section {
-            background: #fff;
-            margin-bottom: 40px;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .course-section:hover {
-            transform: translateY(-5px);
-        }
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .benefits {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .benefits h3 {
-            color: var(--secondary-color);
-        }
-        .benefits ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .benefits li:before {
-            content: "✓ ";
-            color: var(--accent-color);
+
+        .limited {
+            text-align: center;
+            color: var(--accent-red);
             font-weight: bold;
-            margin-right: 5px;
+            font-size: 0.85em;
+            margin-top: 15px;
+            animation: pulse 2s infinite;
         }
-        .testimonial {
-            font-style: italic;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 20px;
-            margin: 20px 0;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 0 8px 8px 0;
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
         }
-        .contact-info {
-            background-color: var(--secondary-color);
-            color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .contact-info h3 {
-            color: #fff;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+
+        /* --- TESTIMONIALS & FOOTER --- */
+        .testimonial { background: var(--light-bg); padding: 40px; border-radius: 20px; margin: 60px 0; text-align: center; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .testimonial-item { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); font-style: italic; }
+
+        footer { background: var(--light-bg); padding: 40px 20px; border-radius: 20px 20px 0 0; margin-top: 40px; text-align: center; }
+        .faq-content { text-align: left; max-width: 800px; margin: 0 auto; }
+        .faq-item { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .faq-question { font-weight: 700; color: var(--primary-green); display: block; margin-bottom: 5px; }
+
+        .disclaimer { background: #fff0f0; border-left: 5px solid var(--accent-red); padding: 20px; border-radius: 5px; margin: 40px auto; max-width: 900px; font-size: 0.9em; text-align: left; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { margin: 0 10px; color: var(--primary-green); font-size: 0.9em; }
+
+        .snowflakes { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: hidden; }
+        .snowflake { position: absolute; top: -20px; color: rgba(255,255,255,0.8); user-select: none; will-change: transform; animation: fall linear forwards; }
+        @keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .offers { grid-template-columns: 1fr; }
+            .bestseller { transform: none; border-width: 2px; }
+            .badge { width: 80%; }
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Emotionale Meisterschaft</h1>
-        <p>Entdecke, wie du deine Gefühle als zuverlässige Wegweiser nutzen und ein authentisches Leben führen kannst</p>
-        <a href="#kursinhalt" class="cta-button">Starte deine Reise zur emotionalen Meisterschaft</a>
-    </div>
+    <div class="snowflakes" id="snowflakes"></div>
     
     <div class="container">
-        <section id="kursinhalt" class="course-section">
-            <h2>Verstehe und vertraue deinen Gefühlen</h2>
-            <p>Unser Kurs "Emotionale Meisterschaft" bietet dir eine umfassende Sammlung von 750 aufschlussreichen Videos und 14 kraftvollen Meditationen. Hier lernst du, deine Gefühle zu verstehen, ihnen zu vertrauen und sie als zuverlässige Wegweiser in deinem Leben zu nutzen.</p>
+        <header>
+            <div class="logo">🎄</div>
+            <h1>Jahresend-Special 2025</h1>
+            <p class="subtitle">Starte emotional stark ins Jahr 2026</p>
             
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xvDjesaK5_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="countdown-container">
+                <div class="countdown-box">
+                    <span id="days" class="countdown-number">00</span>
+                    <span class="countdown-label">Tage</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="hours" class="countdown-number">00</span>
+                    <span class="countdown-label">Std</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="minutes" class="countdown-number">00</span>
+                    <span class="countdown-label">Min</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds" class="countdown-number">00</span>
+                    <span class="countdown-label">Sek</span>
+                </div>
             </div>
-            
-            <div class="benefits">
-                <h3>Was dich erwartet:</h3>
-                <ul>
-                    <li>750 tiefgehende Videos zur Erforschung deiner Gefühlswelt</li>
-                    <li>14 speziell entwickelte Meditationen für transformative Erfahrungen</li>
-                    <li>Techniken zum Verstehen und Interpretieren deiner Emotionen</li>
-                    <li>Methoden zur Verbesserung deiner emotionalen Intelligenz</li>
-                    <li>Wege zur Entwicklung von Vertrauen in deine Gefühle</li>
-                    <li>Strategien zur Nutzung deiner Emotionen als Kompass für Entscheidungen</li>
-                    <li>Ansätze zur Integration deiner Gefühle in ein authentisches Leben</li>
-                </ul>
-            </div>
-            <p><strong>Deine Investition in emotionale Meisterschaft:</strong> Nur 300 Euro für über 750 lebensverändernde Lerneinheiten</p>
-            <a href="https://paypal.me/schattenkurs/300?country.x=DE&locale.x=en_US" class="cta-button">Starte deine Transformation jetzt</a>
-            <p><strong>Flexible Zahlungsoptionen:</strong> Wir bieten individuelle Finanzierungspläne. Kontaktiere uns unter <strong>+491716262694</strong> per WhatsApp oder Anruf für maßgeschneiderte Lösungen.</p>
-        </section>
-        
-        <section id="kursaufbau" class="course-section">
-            <h2>Umfassender Kursaufbau für tiefgreifendes Verständnis</h2>
-            <p>Unser Kurs deckt ein breites Spektrum an Themen ab, die dir helfen, deine Gefühle zu verstehen und als wertvolle Wegweiser zu nutzen:</p>
-            <ul>
-                <li>Grundlagen der emotionalen Intelligenz</li>
-                <li>Verstehen von Angst, Wut und Trauer als wichtige Signale</li>
-                <li>Erforschung von Beziehungsmustern und deren emotionale Wurzeln</li>
-                <li>Entwicklung von Selbstliebe und innerem Frieden</li>
-                <li>Verbindung von Körper, Geist und Emotionen</li>
-                <li>Entdeckung deiner spirituellen Dimension durch Gefühle</li>
-                <li>Überwindung von emotionalen Blockaden</li>
-                <li>Nutzung deiner Gefühle für persönliches und berufliches Wachstum</li>
-            </ul>
-        </section>
 
-        <section id="meditationen" class="course-section">
-            <h2>Kraftvolle Meditationen für emotionale Tiefe</h2>
-            <p>Unsere speziell entwickelten Meditationen helfen dir, tief in deine Gefühlswelt einzutauchen und sie besser zu verstehen:</p>
-            <ul>
-                <li>Gefühlsmeditation zur Wahrnehmungsschärfung</li>
-                <li>Körpermeditation zur Verbindung von Emotionen und physischen Empfindungen</li>
-                <li>Wutmeditation zum Verständnis dieser kraftvollen Emotion</li>
-                <li>Eltern-Meditationen zur Erforschung prägender Beziehungsmuster</li>
-                <li>Herzmeditation zur Öffnung für Mitgefühl und Selbstliebe</li>
-                <li>Suchtmeditation zum Verständnis emotionaler Abhängigkeiten</li>
-                <li>Lustmeditation zur Erforschung positiver Gefühle und Motivation</li>
-            </ul>
-        </section>
+            <div class="guarantee">
+                ✨ 100% Risiko-Frei: 60 Tage Geld-zurück-Garantie ohne Fragen.
+            </div>
+        </header>
 
-        <section id="testimonials" class="course-section">
-            <h2>Was unsere Teilnehmer sagen</h2>
-            <div class="testimonial">
-                "Dieser Kurs hat mir die Augen geöffnet. Ich habe gelernt, meine Gefühle nicht als Feinde, sondern als wertvolle Ratgeber zu sehen. Jetzt verstehe ich mich selbst viel besser und treffe Entscheidungen, die wirklich zu mir passen." - Alex K., 38, Unternehmer
+        <div class="contact-info">
+            <p><strong>Noch unsicher? Schreib mir persönlich:</strong></p>
+            <p style="font-size: 1.2em; margin-top: 10px;">📲 <a href="https://wa.me/491716262694" style="color:var(--primary-green); text-decoration: underline;">+49 171 6262694</a></p>
+            <p style="font-size: 0.9em; color: #666; margin-top: 5px;">(WhatsApp, Telegram, Signal oder SMS)</p>
+        </div>
+
+        <div class="offers">
+            <div class="offer-card">
+                <div class="offer-header">
+                    <h2 class="offer-title">Basis-Paket</h2>
+                    <p class="offer-tagline">Der perfekte Einstieg in deine emotionale Meisterschaft</p>
+                </div>
+                <div class="price-section">
+                    <div class="old-price">297 €</div>
+                    <div class="new-price">177 €</div>
+                    <div class="savings">Du sparst 120 €</div>
+                </div>
+                <div class="features">
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Online-Kurs „Emotionale Meisterschaft“</span></div>
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Über 750 Videos & 14 Meditationen</span></div>
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Lebenslanger Zugriff + Updates</span></div>
+                </div>
+                <a href="https://checkout.teachable.com/secure/259201/checkout/order_hs45z7ng" class="cta-button" target="_blank">Jetzt für 177 € sichern</a>
+                <p class="limited">⚠️ Nur noch 2 Plätze (1 bereits vergeben)</p>
             </div>
-            <div class="testimonial">
-                "Die Meditationen und Videos haben mir geholfen, eine völlig neue Beziehung zu meinen Gefühlen aufzubauen. Ich fühle mich jetzt authentischer und mehr im Einklang mit mir selbst." - Sarah M., 29, Lehrerin
+
+            <div class="offer-card bestseller">
+                <div class="badge">⭐ BELIEBTESTE WAHL</div>
+                <div class="offer-header">
+                    <h2 class="offer-title">Premium-Paket</h2>
+                    <p class="offer-tagline">Kurs + intensive persönliche Begleitung</p>
+                </div>
+                <div class="price-section">
+                    <div class="old-price">747 €</div>
+                    <div class="new-price">327 €</div>
+                    <div class="savings">Du sparst 420 €</div>
+                </div>
+                <p class="upgrade-hint">🔥 Preis-Leistungs-Sieger</p>
+                <div class="features">
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Alles aus dem Basis-Paket</span></div>
+                    <div class="feature-item"><span class="feature-icon">⭐</span><span><strong>3 x 60 Min. Einzelsitzung</strong> mit Jurek</span></div>
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Lösung emotionaler Blockaden</span></div>
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Individuelle Strategien für den Alltag</span></div>
+                </div>
+                <a href="https://checkout.teachable.com/secure/259201/checkout/order_3m59t2zd" class="cta-button" target="_blank">Premium sichern (327 €)</a>
+                <p class="limited">⚠️ Nur noch 2 Plätze (1 bereits vergeben)</p>
             </div>
-        </section>
-        
-        <section id="kontakt" class="course-section">
-            <h2>Dein Weg zur emotionalen Meisterschaft beginnt hier</h2>
-            <div class="contact-info">
-                <h3>Hast du Fragen zum Kurs oder zu individuellen Zahlungsplänen?</h3>
-                <p><strong>E-Mail:</strong> <a href="mailto:ichologie@gmail.com">ichologie@gmail.com</a></p>
-                <p><strong>Telefon & WhatsApp:</strong> +491716262694</p>
+
+            <div class="offer-card">
+                <div class="offer-header">
+                    <h2 class="offer-title">VIP-Paket</h2>
+                    <p class="offer-tagline">Maximale Tiefe & Transformation</p>
+                </div>
+                <div class="price-section">
+                    <div class="old-price">1.597 €</div>
+                    <div class="new-price">577 €</div>
+                    <div class="savings">Du sparst 1.020 €</div>
+                </div>
+                <p class="upgrade-hint">💎 Maximale Betreuung</p>
+                <div class="features">
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Alles aus dem Premium-Paket</span></div>
+                    <div class="feature-item"><span class="feature-icon">👑</span><span><strong>7 x 60 Min. Einzelsitzung</strong></span></div>
+                    <div class="feature-item"><span class="feature-icon">⚡</span><span><strong>3 Monate Priority-Support</strong> (WhatsApp)</span></div>
+                    <div class="feature-item"><span class="feature-icon">✅</span><span>Bevorzugte Terminvergabe</span></div>
+                </div>
+                <a href="https://checkout.teachable.com/secure/259201/checkout/order_c37lckjc" class="cta-button" target="_blank">VIP werden (577 €)</a>
+                <p class="limited">⚠️ Nur noch 1 Platz (1 bereits vergeben)</p>
             </div>
-            <p><strong>Unser Versprechen an dich:</strong> Wenn du nach 30 Tagen nicht von unserem Kurs überzeugt bist, erhältst du dein Geld zurück - keine Fragen gestellt. Bei uns gibt es keine Verpflichtungen, nur Möglichkeiten, deine Gefühle besser zu verstehen und zu nutzen.</p>
-        </section>
+        </div>
+
+        <div class="testimonial">
+            <h2 class="testimonial-title">Ergebnisse, die bleiben</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"Die Einzelsitzungen haben mein Leben verändert. In nur drei Terminen so viel Klarheit wie nie zuvor."</p>
+                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-green);">- Sarah, 32</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Drei Einzelsitzungen waren der absolute Durchbruch. Endlich verstehe ich meine Emotionen richtig."</p>
+                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-green);">- Michael, 28</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Sieben Stunden Begleitung plus der Messenger-Support – das hat mich tief geheilt."</p>
+                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-green);">- Lisa, 35</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3 class="faq-title">Häufige Fragen</h3>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <span class="faq-question">Gibt es eine Geld-zurück-Garantie?</span>
+                    <div class="faq-answer">Ja! In den ersten 2 Monaten kannst du jederzeit kündigen und bekommst den vollen Betrag zurück – ohne Begründung.</div>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">Wie laufen die Einzelsitzungen ab?</span>
+                    <div class="faq-answer">Jede Sitzung dauert 60 Minuten (via Zoom/Call). Termine buchst du flexibel online.</div>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">Bis wann gilt das Angebot?</span>
+                    <div class="faq-answer">Hartes Ende am 31.12.2025 – danach gelten wieder die regulären Preise.</div>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>RECHTLICHER HINWEIS:</strong><br>
+                Dieser Kurs und die Einzelsitzungen sind reines Coaching zur Persönlichkeitsentwicklung. Ich agiere nicht als Heilpraktiker für Psychotherapie. Die Inhalte ersetzen keine medizinische oder therapeutische Behandlung.
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+                <a href="#">AGB</a>
+                <a href="#">Widerruf</a>
+            </div>
+
+            <p class="footer-copyright">
+                © 2025 Emotionale Meisterschaft | <a href="https://emotionalemeisterschaft.com" style="color: inherit; text-decoration: underline;">emotionalemeisterschaft.com</a>
+            </p>
+        </footer>
     </div>
-    
-    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px;">
-        <a href="mailto:ichologie@gmail.com" style="color: white; margin-right: 20px;">Kontakt</a>
-        <a href="impressum-datenschutz.html" style="color: white; margin-right: 20px;">Impressum</a>
-        <a href="impressum-datenschutz.html#datenschutz" style="color: white; margin-right: 20px;">Datenschutz</a>
-        <a href="agb-widerruf.html" style="color: white;">AGB & Widerruf</a>
-        <p style="margin-top: 10px;">&copy; 2024 Emotionale Meisterschaft</p>
-    </footer>
+
+    <script>
+        const countdownDate = new Date("Dec 31, 2025 23:59:59").getTime();
+        
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+        };
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        const snowContainer = document.getElementById('snowflakes');
+        
+        function createSnowflake() {
+            if (snowContainer.childElementCount > 50) return;
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerHTML = '❄';
+            snowflake.style.left = Math.random() * 100 + '%';
+            const duration = Math.random() * 5 + 5;
+            snowflake.style.animationDuration = duration + 's';
+            snowflake.style.opacity = Math.random() * 0.7 + 0.3;
+            snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+            snowContainer.appendChild(snowflake);
+            setTimeout(() => { snowflake.remove(); }, duration * 1000);
+        }
+        setInterval(createSnowflake, 400);
+    </script>
 </body>
 </html>
