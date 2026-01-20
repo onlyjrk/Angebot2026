@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Neujahrs-Special 2026: Emotionale Meisterschaft Coaching & Online-Kurs">
     <title>🎆 Neujahrs-Special 2026: Emotionale Meisterschaft</title>
-  
+   
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* --- CSS VARIABLES --- */
@@ -49,7 +49,7 @@
             border-bottom: 5px solid var(--accent-gold);
         }
         .logo { font-size: 3em; margin-bottom: 10px; display: block; }
-      
+       
         h1 {
             font-size: 2.5em;
             color: var(--accent-gold);
@@ -63,24 +63,6 @@
             font-weight: 600;
             margin-bottom: 25px;
         }
-        /* --- COUNTDOWN (GOLD) --- */
-        .countdown-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0 30px;
-        }
-        .countdown-box {
-            background: var(--accent-gold);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            min-width: 70px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(240, 180, 41, 0.4);
-        }
-        .countdown-number { font-size: 1.5em; font-weight: bold; display: block; }
-        .countdown-label { font-size: 0.7em; text-transform: uppercase; }
         /* --- GUARANTEE --- */
         .guarantee {
             background: linear-gradient(135deg, #ffd700 0%, #f0b429 100%);
@@ -382,36 +364,17 @@
 </head>
 <body>
     <div class="sparkles" id="sparkles"></div>
-  
+   
     <div class="container">
         <header>
             <div class="logo">🎆</div>
             <h1>Neujahrs-Special 2026</h1>
             <p class="subtitle">Starte kraftvoll und emotional stark ins neue Jahr</p>
-          
-            <div class="countdown-container">
-                <div class="countdown-box">
-                    <span id="days" class="countdown-number">00</span>
-                    <span class="countdown-label">Tage</span>
-                </div>
-                <div class="countdown-box">
-                    <span id="hours" class="countdown-number">00</span>
-                    <span class="countdown-label">Std</span>
-                </div>
-                <div class="countdown-box">
-                    <span id="minutes" class="countdown-number">00</span>
-                    <span class="countdown-label">Min</span>
-                </div>
-                <div class="countdown-box">
-                    <span id="seconds" class="countdown-number">00</span>
-                    <span class="countdown-label">Sek</span>
-                </div>
-            </div>
+           
             <div class="guarantee">
                 ✨ 100% Risiko-Frei: 60 Tage Geld-zurück-Garantie ohne Fragen.
             </div>
         </header>
-        <!-- NEU-HIER BANNER (Kompakt, oben) -->
         <div class="new-here-banner">
             <h3>🆕 Zum ersten Mal hier?</h3>
             <p>Schau dir zuerst den 2-Minuten-Überblick auf der Hauptseite an:<br>
@@ -421,7 +384,6 @@
             </a>
             <p class="return-note">Danach kommst du hierher zurück für das Special-Angebot! 👇</p>
         </div>
-        <!-- WhatsApp Kontakt -->
         <div class="contact-info">
             <p><strong>Du hast Fragen oder bist unsicher, welches Paket zu dir passt?</strong></p>
             <p style="font-size: 1.2em; margin-top: 15px;">
@@ -431,7 +393,6 @@
             <p style="margin-top: 10px; color: #555;">Ich helfe dir persönlich und unverbindlich weiter!</p>
         </div>
         <div class="offers">
-            <!-- BASIS -->
             <div class="offer-card basis">
                 <div class="offer-header">
                     <h2 class="offer-title">Basis-Paket</h2>
@@ -452,7 +413,6 @@
                 <a href="https://checkout.teachable.com/secure/259201/checkout/order_hs45z7ng" class="cta-button" target="_blank">Jetzt für 177 € sichern</a>
                 <p class="limited">⚠️ Limitierte Plätze verfügbar</p>
             </div>
-            <!-- PREMIUM (Größer & Mittig) -->
             <div class="offer-card premium">
                 <div class="badge">⭐ BELIEBTESTE WAHL</div>
                 <div class="offer-header">
@@ -477,7 +437,6 @@
                 <a href="https://checkout.teachable.com/secure/259201/checkout/order_3m59t2zd" class="cta-button" target="_blank">Premium sichern (327 €)</a>
                 <p class="limited">⚠️ Begrenzte Coaching-Plätze</p>
             </div>
-            <!-- VIP -->
             <div class="offer-card vip">
                 <div class="offer-header">
                     <h2 class="offer-title">VIP-Paket</h2>
@@ -554,20 +513,23 @@
             </p>
         </footer>
     </div>
+    
     <script>
-        // Countdown bis 15. Januar 2026
-        const countdownDate = new Date("Jan 15, 2026 23:59:59").getTime();
-      
-        const updateCountdown = () => {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("days").innerText = "00";
-                document.getElementById("hours").innerText = "00";
-                document.getElementById("minutes").innerText = "00";
-                document.getElementById("seconds").innerText = "00";
-                return;
-            }
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000
+        const sparkleContainer = document.getElementById('sparkles');
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle');
+            sparkle.innerHTML = '✨';
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.animationDuration = Math.random() * 3 + 2 + 's';
+            sparkle.style.opacity = Math.random();
+            sparkle.style.fontSize = Math.random() * 10 + 10 + 'px';
+            sparkleContainer.appendChild(sparkle);
+            setTimeout(() => {
+                sparkle.remove();
+            }, 5000);
+        }
+        setInterval(createSparkle, 200);
+    </script>
+</body>
+</html>
