@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jahresend-Special 2025: Emotionale Meisterschaft Coaching & Online-Kurs">
-    <title>🎄 Jahresend-Special 2025: Emotionale Meisterschaft</title>
+    <meta name="description" content="Neujahrs-Special 2026: Emotionale Meisterschaft Coaching & Online-Kurs">
+    <title>🎆 Neujahrs-Special 2026: Emotionale Meisterschaft</title>
   
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* --- CSS VARIABLES --- */
         :root {
-            --primary-green: #1a472a;
-            --dark-green: #0f2e1b;
-            --accent-red: #c41e3a;
-            --gold: #d4af37;
+            --primary-color: #1a365d;
+            --dark-blue: #0f2847;
+            --accent-gold: #f0b429;
+            --bright-gold: #ffd700;
             --text-color: #2c3e50;
             --light-bg: rgba(255, 255, 255, 0.95);
             --card-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -23,7 +23,7 @@
             font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background: radial-gradient(circle at top, #2d5a3d 0%, #1a472a 60%, #05140a 100%);
+            background: radial-gradient(circle at top, #2d4a6d 0%, #1a365d 60%, #0a1929 100%);
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
@@ -46,24 +46,24 @@
             border-radius: 20px;
             margin-bottom: 30px;
             box-shadow: var(--card-shadow);
-            border-bottom: 5px solid var(--accent-red);
+            border-bottom: 5px solid var(--accent-gold);
         }
         .logo { font-size: 3em; margin-bottom: 10px; display: block; }
       
         h1 {
             font-size: 2.5em;
-            color: var(--accent-red);
+            color: var(--accent-gold);
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         .subtitle {
             font-size: 1.3em;
-            color: var(--primary-green);
+            color: var(--primary-color);
             font-weight: 600;
             margin-bottom: 25px;
         }
-        /* --- COUNTDOWN (ROT) --- */
+        /* --- COUNTDOWN (GOLD) --- */
         .countdown-container {
             display: flex;
             justify-content: center;
@@ -71,44 +71,44 @@
             margin: 20px 0 30px;
         }
         .countdown-box {
-            background: var(--accent-red);
+            background: var(--accent-gold);
             color: white;
             padding: 10px 15px;
             border-radius: 8px;
             min-width: 70px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(196, 30, 58, 0.4);
+            box-shadow: 0 4px 10px rgba(240, 180, 41, 0.4);
         }
         .countdown-number { font-size: 1.5em; font-weight: bold; display: block; }
         .countdown-label { font-size: 0.7em; text-transform: uppercase; }
         /* --- GUARANTEE --- */
         .guarantee {
-            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
-            color: white;
+            background: linear-gradient(135deg, #ffd700 0%, #f0b429 100%);
+            color: var(--dark-blue);
             padding: 20px;
             border-radius: 12px;
             font-weight: 600;
             font-size: 1.1em;
             margin: 30px auto;
             max-width: 800px;
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 5px 15px rgba(240, 180, 41, 0.4);
         }
         /* --- NEU-HIER BANNER (Kompakt) --- */
         .new-here-banner {
-            background: linear-gradient(135deg, #1a472a 0%, #0f2e1b 100%);
+            background: linear-gradient(135deg, #1a365d 0%, #0f2847 100%);
             color: white;
             padding: 20px 30px;
             border-radius: 12px;
             text-align: center;
             margin: 20px auto 30px;
             max-width: 900px;
-            border: 2px solid var(--gold);
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            border: 2px solid var(--bright-gold);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
         }
         .new-here-banner h3 {
             font-size: 1.3em;
             margin-bottom: 10px;
-            color: var(--gold);
+            color: var(--bright-gold);
         }
         .new-here-banner p {
             font-size: 0.95em;
@@ -117,8 +117,8 @@
         }
         .new-here-banner a {
             display: inline-block;
-            background: var(--gold);
-            color: var(--dark-green);
+            background: var(--bright-gold);
+            color: var(--dark-blue);
             font-weight: bold;
             padding: 12px 30px;
             border-radius: 30px;
@@ -180,18 +180,18 @@
         }
         /* --- PREMIUM: Größer & Hervorgehoben --- */
         .offer-card.premium {
-            border: 4px solid var(--gold);
+            border: 4px solid var(--bright-gold);
             transform: scale(1.08);
             z-index: 3;
-            box-shadow: 0 20px 50px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 20px 50px rgba(255, 215, 0, 0.4);
         }
         .offer-card.premium:hover {
             transform: scale(1.08) translateY(-8px);
-            box-shadow: 0 25px 60px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 25px 60px rgba(255, 215, 0, 0.5);
         }
         .offer-card.premium .offer-title {
             font-size: 2em;
-            color: var(--gold);
+            color: var(--accent-gold);
         }
         .offer-card.premium .new-price {
             font-size: 3.2em;
@@ -211,8 +211,8 @@
             top: -15px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--gold);
-            color: white;
+            background: var(--bright-gold);
+            color: var(--dark-blue);
             padding: 10px 25px;
             border-radius: 50px;
             font-weight: bold;
@@ -226,7 +226,7 @@
             50% { transform: translateX(-50%) scale(1.05); }
         }
         .offer-title {
-            color: var(--primary-green);
+            color: var(--primary-color);
             margin-bottom: 5px;
             text-align: center;
         }
@@ -240,13 +240,13 @@
         .price-section { text-align: center; margin: 10px 0; }
         .old-price { font-size: 1.1em; color: #999; text-decoration: line-through; }
         .new-price {
-            color: var(--accent-red);
+            color: var(--accent-gold);
             font-weight: 700;
             line-height: 1.1;
         }
         .savings {
-            background: #ffebee;
-            color: var(--accent-red);
+            background: #fff8e1;
+            color: #f57c00;
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.9em;
@@ -257,18 +257,18 @@
         /* HIGHLIGHT BOX FÜR SITZUNGEN */
         .session-highlight {
             background: linear-gradient(to bottom, #fffdf5, #fff8e1);
-            border: 2px solid var(--gold);
+            border: 2px solid var(--accent-gold);
             padding: 15px 5px;
             margin: 20px 0 10px 0;
             border-radius: 10px;
             text-align: center;
-            color: var(--primary-green);
+            color: var(--primary-color);
         }
         .session-count {
             display: block;
             font-size: 1.4em;
             font-weight: 800;
-            color: #b8860b;
+            color: #f0b429;
             text-transform: uppercase;
             line-height: 1.2;
         }
@@ -286,7 +286,7 @@
             font-size: 0.95em;
         }
         .feature-item:last-child { border-bottom: none; }
-        .feature-icon { color: var(--primary-green); flex-shrink: 0; }
+        .feature-icon { color: var(--primary-color); flex-shrink: 0; }
         .cta-button {
             display: block;
             width: 100%;
@@ -294,25 +294,25 @@
             font-size: 1.1em;
             font-weight: bold;
             color: white;
-            background: linear-gradient(135deg, var(--accent-red), #a01729);
+            background: linear-gradient(135deg, var(--accent-gold), #d99e1f);
             border-radius: 50px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(196, 30, 58, 0.3);
+            box-shadow: 0 5px 15px rgba(240, 180, 41, 0.3);
             margin-top: auto;
         }
         .cta-button:hover {
-            background: linear-gradient(135deg, #a01729, #800000);
-            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.5);
+            background: linear-gradient(135deg, #ffd700, var(--accent-gold));
+            box-shadow: 0 8px 25px rgba(240, 180, 41, 0.5);
             transform: scale(1.02);
         }
         .premium .cta-button {
             font-size: 1.3em;
             padding: 22px;
-            box-shadow: 0 8px 20px rgba(196, 30, 58, 0.4);
+            box-shadow: 0 8px 20px rgba(240, 180, 41, 0.4);
         }
         .limited {
             text-align: center;
-            color: var(--accent-red);
+            color: #f57c00;
             font-weight: bold;
             font-size: 0.85em;
             margin-top: 15px;
@@ -321,7 +321,7 @@
         /* NEU: Plätze-Anzeige */
         .spots-left {
             text-align: center;
-            color: var(--accent-red);
+            color: #f57c00;
             font-weight: bold;
             font-size: 1.1em;
             margin: 15px 0 10px;
@@ -339,18 +339,18 @@
         footer { background: var(--light-bg); padding: 40px 20px; border-radius: 20px 20px 0 0; margin-top: 40px; text-align: center; }
         .faq-content { text-align: left; max-width: 800px; margin: 0 auto; }
         .faq-item { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        .faq-question { font-weight: 700; color: var(--primary-green); display: block; margin-bottom: 5px; }
+        .faq-question { font-weight: 700; color: var(--primary-color); display: block; margin-bottom: 5px; }
         .faq-answer a {
-            color: var(--accent-red);
+            color: var(--accent-gold);
             font-weight: bold;
             text-decoration: underline;
         }
-        .disclaimer { background: #fff0f0; border-left: 5px solid var(--accent-red); padding: 20px; border-radius: 5px; margin: 40px auto; max-width: 900px; font-size: 0.9em; text-align: left; }
+        .disclaimer { background: #fff8e1; border-left: 5px solid var(--accent-gold); padding: 20px; border-radius: 5px; margin: 40px auto; max-width: 900px; font-size: 0.9em; text-align: left; }
         .footer-links { margin-bottom: 20px; }
-        .footer-links a { margin: 0 10px; color: var(--primary-green); font-size: 0.9em; text-decoration: underline; }
-        .footer-links a:hover { color: var(--accent-red); }
-        .snowflakes { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: hidden; }
-        .snowflake { position: absolute; top: -20px; color: rgba(255,255,255,0.8); user-select: none; will-change: transform; animation: fall linear forwards; }
+        .footer-links a { margin: 0 10px; color: var(--primary-color); font-size: 0.9em; text-decoration: underline; }
+        .footer-links a:hover { color: var(--accent-gold); }
+        .sparkles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: hidden; }
+        .sparkle { position: absolute; top: -20px; color: rgba(255,215,0,0.8); user-select: none; will-change: transform; animation: fall linear forwards; }
         @keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }
        
         @media (max-width: 968px) {
@@ -381,13 +381,13 @@
     </style>
 </head>
 <body>
-    <div class="snowflakes" id="snowflakes"></div>
+    <div class="sparkles" id="sparkles"></div>
   
     <div class="container">
         <header>
-            <div class="logo">🎄</div>
-            <h1>Jahresend-Special 2025</h1>
-            <p class="subtitle">Starte emotional stark ins Jahr 2026</p>
+            <div class="logo">🎆</div>
+            <h1>Neujahrs-Special 2026</h1>
+            <p class="subtitle">Starte kraftvoll und emotional stark ins neue Jahr</p>
           
             <div class="countdown-container">
                 <div class="countdown-box">
@@ -426,7 +426,7 @@
             <p><strong>Du hast Fragen oder bist unsicher, welches Paket zu dir passt?</strong></p>
             <p style="font-size: 1.2em; margin-top: 15px;">
                 📲 Schreib mir direkt auf WhatsApp:<br>
-                <a href="https://wa.me/491716262694" style="color:var(--primary-green); text-decoration: underline; font-weight: bold;">+49 171 6262694</a>
+                <a href="https://wa.me/491716262694" style="color:var(--primary-color); text-decoration: underline; font-weight: bold;">+49 171 6262694</a>
             </p>
             <p style="margin-top: 10px; color: #555;">Ich helfe dir persönlich und unverbindlich weiter!</p>
         </div>
@@ -442,7 +442,7 @@
                     <div class="new-price">177 €</div>
                     <div class="savings">Du sparst 120 €</div>
                 </div>
-                <div class="spots-left">🔥 Nur noch 2 Plätze frei (1 bereits vergeben)</div>
+                <div class="spots-left">🔥 Nur noch 2 Plätze frei</div>
                 <div style="margin-top: 20px;"></div>
                 <div class="features">
                     <div class="feature-item"><span class="feature-icon">✅</span><span>Online-Kurs „Emotionale Meisterschaft"</span></div>
@@ -488,7 +488,7 @@
                     <div class="new-price">577 €</div>
                     <div class="savings">Du sparst 1.020 €</div>
                 </div>
-                <div class="spots-left">🔥 Nur noch 1 Platz frei</div>
+                <div class="spots-left">🔥 Nur noch 2 Plätze frei</div>
                 <div class="session-highlight">
                     <span class="session-count">7x Einzelsitzung</span>
                     <span class="session-sub">Maximale Begleitung</span>
@@ -507,15 +507,15 @@
             <div class="testimonial-grid">
                 <div class="testimonial-item">
                     <p>"Die Einzelsitzungen haben mein Leben verändert. In nur drei Terminen so viel Klarheit wie nie zuvor."</p>
-                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-green);">- Sarah, 32</p>
+                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-color);">- Sarah, 32</p>
                 </div>
                 <div class="testimonial-item">
                     <p>"Drei Einzelsitzungen waren der absolute Durchbruch. Endlich verstehe ich meine Emotionen richtig."</p>
-                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-green);">- Michael, 28</p>
+                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-color);">- Michael, 28</p>
                 </div>
                 <div class="testimonial-item">
                     <p>"Sieben Stunden Begleitung plus der Messenger-Support – das hat mich tief geheilt."</p>
-                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-green);">- Lisa, 35</p>
+                    <p style="margin-top:10px; font-weight:bold; color:var(--primary-color);">- Lisa, 35</p>
                 </div>
             </div>
         </div>
@@ -532,7 +532,7 @@
                 </div>
                 <div class="faq-item">
                     <span class="faq-question">Bis wann gilt das Angebot?</span>
-                    <div class="faq-answer">Hartes Ende am 31.12.2025 – danach gelten wieder die regulären Preise.</div>
+                    <div class="faq-answer">Das Neujahrs-Special endet am 15. Januar 2026 – danach gelten wieder die regulären Preise.</div>
                 </div>
                 <div class="faq-item">
                     <span class="faq-question">Wo finde ich detaillierte Infos zu den Kursinhalten?</span>
@@ -550,13 +550,13 @@
                 <a href="https://emotionalemeisterschaft.com/agb-widerruf/" target="_blank">Widerruf</a>
             </div>
             <p class="footer-copyright">
-                © 2025 Emotionale Meisterschaft | <a href="https://emotionalemeisterschaft.com" style="color: inherit; text-decoration: underline;">emotionalemeisterschaft.com</a>
+                © 2026 Emotionale Meisterschaft | <a href="https://emotionalemeisterschaft.com" style="color: inherit; text-decoration: underline;">emotionalemeisterschaft.com</a>
             </p>
         </footer>
     </div>
     <script>
-        // Countdown korrigiert
-        const countdownDate = new Date("Dec 31, 2025 23:59:59").getTime();
+        // Countdown bis 15. Januar 2026
+        const countdownDate = new Date("Jan 15, 2026 23:59:59").getTime();
       
         const updateCountdown = () => {
             const now = new Date().getTime();
@@ -570,19 +570,4 @@
                 return;
             }
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("days").innerText = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
-        };
-        const countdownInterval = setInterval(updateCountdown, 1000);
-        updateCountdown();
-
-        // Schneeflocken (optional, falls du sie behalten möchtest – hier nur ein einfaches Beispiel)
-        // Du kannst diesen Teil erweitern oder entfernen
-    </script>
-</body>
-</html>
+            const hours = Math.floor((distance % (1000
